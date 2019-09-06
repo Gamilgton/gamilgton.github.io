@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Mirza';
+    src: url('Mirza-Regular.eot');
+    src: url('Mirza-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mirza-Regular.woff2') format('woff2'),
+        url('Mirza-Regular.woff') format('woff'),
+        url('Mirza-Regular.ttf') format('truetype'),
+        url('Mirza-Regular.svg#Mirza-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mirza';
+    src: url('Mirza-Bold.eot');
+    src: url('Mirza-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mirza-Bold.woff2') format('woff2'),
+        url('Mirza-Bold.woff') format('woff'),
+        url('Mirza-Bold.ttf') format('truetype'),
+        url('Mirza-Bold.svg#Mirza-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
