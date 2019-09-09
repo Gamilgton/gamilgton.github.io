@@ -24,23 +24,23 @@
 
                     <div class="row">
 
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1 col-1">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-1">
                             <div class="logo">
                                 <img src="img/logo.png" alt="logo">
                             </div>
                         </div>
 
-                        <div class="col-xl-2 offset-xl-4 col-lg-4 offset-lg-2 col-md-3 offset-md-2 col-sm-4 offset-sm-1 col-5 offset-3">
+                        <div class="col-xl-2 offset-xl-4 col-lg-4 offset-lg-2 col-md-3 offset-md-2 col-sm-4 offset-sm-1">
                             <div class="phone-block">
                                 <a class="phone-link" href="#">+48 660 169 434</a>
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-3 offset-sm-0 col-6 offset-3">
+                        <div class="col-xl-3 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-3 offset-sm-0">
                             <div class="wrap">
                                 <div class="wrap-block">
                                     <button class="btn button popup-btn">
-                                    Get Your consultation
+                                      Get Your consultation
                                     </button>
                                 </div>
                             </div>
@@ -137,22 +137,24 @@
             <div class="section-header section-header-light">
               <div class="row">
 
-                <div class="col-xl-4 offset-xl-4">
+                <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 ">
                   <h2>Prices</h2>
                   <p>Choose the option that suits YouChoose the option that suits You</p>
                 </div>
 
-                  <div class="col-xl-4">
-                    <button class="btn button price-header-btn" data-toggle="modal">
-                    Calculate the exact cost
-                  </button>
+                  <div class="col-xl-4 col-lg-4">
+                    <div class="prise-button">
+                      <button class="btn button price-header-btn" data-toggle="modal">
+                        Calculate the exact cost
+                      </button>
+                    </div>
                   </div>
 
               </div><!--row-->
 
               <div class="row">
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
                   <div class="price-block">
                     <h4>Plaster your material</h4>
                     <img src="img/price/1.jpg" alt="">
@@ -165,7 +167,7 @@
                   </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
                   <div class="price-block">
                     <h4>The plaster under the putty</h4>
                     <img src="img/price/2.jpg" alt="">
@@ -180,10 +182,10 @@
                   </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-12">
                   <div class="price-block">
                     <h4>The plaster under the Wallpaper</h4>
-                    <img src="img/price/3.jpg" alt="">
+                    <img class="bottom-image" src="img/price/3.jpg" alt="">
                     <span class="price-tag">from 560 $/m<sup>2</sup></span>
                     <ul class="price-list">
                       <li>The delivery of the material and its volume</li>
@@ -304,6 +306,8 @@
                      breakpoint: 320,
                      settings: {
                        slidesToShow: 1,
+                       prevArrow: '<button class="prev arrow"></button>',
+                       nextArrow: '<button class="next arrow"></button>',
                        slidesToScroll: 1,
                      }
                    }

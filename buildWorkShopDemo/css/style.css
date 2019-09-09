@@ -38,7 +38,6 @@ textarea:focus {
   background-color: #fcb303;
   color: #ffffff;
   text-transform: uppercase;
-  -webkit-transition: all 0.2;
   transition: all 0.2;
 }
 .button:hover {
@@ -62,7 +61,7 @@ section {
   color: #ffffff;
 }
 .section-header p {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   font-size: 1.4rem;
   color: #ffffff;
 }
@@ -71,6 +70,7 @@ section {
   padding: 3rem 0 5rem;
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
   background-size: cover;
+  text-align: center;
   /* main header */
   /* subheader */
   /* green ink */
@@ -141,8 +141,7 @@ section {
 .main-form label {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   padding: 0.3rem;
   font-size: 1.3rem;
   background-color: #ffffff;
@@ -211,8 +210,7 @@ section {
 }
 .arrow {
   top: 20%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   position: absolute;
   z-index: 99;
   width: 2rem;
@@ -238,12 +236,14 @@ section {
 .price-header-btn {
   margin-top: 1rem;
 }
+.price-button {
+  text-align: right;
+}
 .price-block {
-  padding: 1rem 2.5rem 3.5rem;
+  padding: 1rem 2rem 3.5rem;
   min-height: 50rem;
   background-color: #ffffff;
-  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0);
-          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0);
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0);
   text-align: center;
 }
 .price-block h4 {
@@ -255,8 +255,17 @@ section {
   font-size: 1.6rem;
   padding: 0;
   list-style: none;
-  min-height: 14rem;
+  min-height: 18rem;
   line-height: 1.8rem;
+}
+.price-list li::before {
+  content: '';
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: url(../img/price/svg/green-correct-symbol@0,5x.svg) center no-repeat;
+  vertical-align: middle;
+  background-size: 60%;
 }
 .price-tag {
   display: block;
@@ -265,9 +274,10 @@ section {
   font-family: 'Mirza_bold', sans-serif;
 }
 .price img {
+  width: 100%;
+  max-width: 30rem;
   display: inline-block;
   margin-bottom: 3rem;
-  width: 30rem;
 }
 /* modal windows */
 .popup {
@@ -308,8 +318,7 @@ section {
 .popup-content {
   position: fixed;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   padding: 4rem 6rem;
   top: 10%;
   background-color: #ffffff;
@@ -317,8 +326,7 @@ section {
 .popup label {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   padding: 0.3rem;
   font-size: 1.3rem;
   background-color: #ffffff;
@@ -342,26 +350,48 @@ section {
   font-size: 1.7rem;
 }
 @media (max-width: 991px) and (min-width: 769px) {
+  /* large */
   .main-content {
     margin-top: 3rem;
   }
   .main-title {
     text-align: center;
     padding-bottom: 3rem;
+  }
+  .price-block {
+    margin: 1.5rem 0;
+  }
+  .prise-button {
+    margin-bottom: 4rem;
   }
 }
-@media (max-width: 767px) and (min-width: 575px) {
+@media (max-width: 767px) and (min-width: 576px) {
+  /* medium */
   .main-content {
     margin-top: 3rem;
   }
   .main-title {
     text-align: center;
     padding-bottom: 3rem;
+  }
+  .price-block {
+    margin: 1.5rem 0;
+  }
+  .prise-button {
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 575px) {
-  .phone-block {
+  /* small */
+  .logo,
+  .phone-block,
+  .wrap-block {
+    display: inline-block;
+    margin-left: 10px;
     text-align: center;
+  }
+  .main-title {
+    margin-top: 5rem;
   }
   .main-content {
     margin-top: 3rem;
@@ -372,5 +402,11 @@ section {
   }
   .main-content {
     margin-top: 8rem;
+  }
+  .price-block {
+    margin: 1.5rem 0;
+  }
+  .prise-button {
+    margin-bottom: 4rem;
   }
 }
