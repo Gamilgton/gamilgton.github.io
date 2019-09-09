@@ -49,18 +49,19 @@ section {
   padding: 10rem 0;
 }
 .section-header {
-  text-align: center;
   margin: 2rem 0 10rem;
 }
 .section-header-light {
-  margin-top: 0px;
+  margin: 5rem 0;
 }
 .section-header h2 {
+  text-align: center;
   font-family: 'Mirza_bold', sans-serif;
   font-size: 3.6rem;
   color: #ffffff;
 }
 .section-header p {
+  text-align: center;
   padding-bottom: 4rem;
   font-size: 1.4rem;
   color: #ffffff;
@@ -182,6 +183,9 @@ section {
   color: #1a1820;
 }
 /* feature section */
+.features .section-header {
+  text-align: center;
+}
 .features-block {
   text-align: center;
 }
@@ -231,12 +235,11 @@ section {
 /* prices section */
 .price {
   background-color: #33c15b;
+  text-align: right;
   /* price cards */
 }
 .price-header-btn {
   margin-top: 1rem;
-}
-.price-button {
   text-align: right;
 }
 .price-block {
@@ -261,8 +264,8 @@ section {
 .price-list li::before {
   content: '';
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background: url(../img/price/svg/green-correct-symbol@0,5x.svg) center no-repeat;
   vertical-align: middle;
   background-size: 60%;
@@ -275,7 +278,7 @@ section {
 }
 .price img {
   width: 100%;
-  max-width: 30rem;
+  max-width: 65rem;
   display: inline-block;
   margin-bottom: 3rem;
 }
@@ -362,6 +365,7 @@ section {
     margin: 1.5rem 0;
   }
   .prise-button {
+    text-align: center;
     margin-bottom: 4rem;
   }
 }
@@ -378,6 +382,7 @@ section {
     margin: 1.5rem 0;
   }
   .prise-button {
+    text-align: center;
     margin-bottom: 4rem;
   }
 }
@@ -386,9 +391,10 @@ section {
   .logo,
   .phone-block,
   .wrap-block {
-    display: inline-block;
-    margin-left: 10px;
     text-align: center;
+  }
+  .main-container {
+    margin-top: 5rem;
   }
   .main-title {
     margin-top: 5rem;

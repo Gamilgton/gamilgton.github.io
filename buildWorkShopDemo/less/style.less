@@ -76,20 +76,23 @@ section{
     padding: 10rem 0;
 }
 .section-header{
+    // text-align: center;
     &-light{
-        margin-top: 0px;
+        margin: 5rem 0;
     }
     h2{
+        text-align: center;
         .bold();
         font-size: 3.6rem;
         color: @white;
     }
     p{
+        text-align: center;
         padding-bottom: 4rem;
         font-size: 1.4rem;
         color: @white;
     }
-    text-align: center;
+
     margin: 2rem 0 10rem;
 }
 
@@ -230,6 +233,9 @@ section{
 /* feature section */
 
 .features{
+    .section-header{
+        text-align: center;
+    }
     &-block{
         text-align: center;
         h3{
@@ -285,10 +291,9 @@ section{
 /* prices section */
 .price{
     background-color: @icons-color-alt;
+    text-align: right;
     &-header-btn{
         margin-top: 1rem;
-    }
-    &-button{
         text-align: right;
     }
     /* price cards */
@@ -315,8 +320,8 @@ section{
             &::before{
                 content: '';
                 display: inline-block;
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
                 background: url(../img/price/svg/green-correct-symbol@0,5x.svg) center no-repeat;
                 vertical-align: middle;
                 background-size: 60%;
@@ -331,7 +336,7 @@ section{
     }
     img{
         width: 100%;
-        max-width: 30rem;
+        max-width: 65rem;
         display: inline-block;
         margin-bottom: 3rem;
 
@@ -421,6 +426,7 @@ section{
          margin: 1.5rem 0;
     }
     .prise-button{
+        text-align: center;
         margin-bottom: 4rem
     }
 }
@@ -431,15 +437,17 @@ section{
          margin: 1.5rem 0;
     }
     .prise-button{
+        text-align: center;
          margin-bottom: 4rem
     }
 }
 
 @media(max-width:575px){                            /* small */
     .logo,.phone-block,.wrap-block{
-        display: inline-block;
-        margin-left: 10px;
         text-align: center;
+    }
+    .main-container{
+        margin-top: 5rem;
     }
     .main-title{
         margin-top: 5rem;
